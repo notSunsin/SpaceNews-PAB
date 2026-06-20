@@ -5,6 +5,9 @@ antariksa internasional terbaru menggunakan **Spaceflight News API v4**,
 dengan autentikasi & penyimpanan data melalui **Firebase Authentication**,
 **Cloud Firestore**, dan sesi lokal via **SharedPreferences**.
 
+
+---
+Muhammad Rizky H — 1462300237
 ---
 
 ## ✅ Pemenuhan Spesifikasi
