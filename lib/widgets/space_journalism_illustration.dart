@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import '../utils/app_colors.dart';
 
-/// A self-contained, copyright-safe vector illustration combining a
-/// satellite and a newspaper to represent "space journalism" — used
-/// on the Welcome Page in place of a hot-linked stock photo.
 class SpaceJournalismIllustration extends StatelessWidget {
   final double size;
 
