@@ -32,8 +32,7 @@ dengan autentikasi & penyimpanan data melalui **Firebase Authentication**,
 ## 📌 Catatan Penting tentang Gambar
 
 - **Logo aplikasi**: diambil dari gambar Freepik (keyword *"e-commerce"*) yang
-  Anda unggah, dikonversi dari `.avif` → `.png` agar kompatibel dengan Flutter,
-  disimpan di `assets/images/logo.png`.
+  Anda unggah, disimpan di `assets/images/logo.png`.
 - **Ilustrasi Welcome Page**: dibuat sebagai vector illustration kustom
   langsung di Flutter (`lib/widgets/space_journalism_illustration.dart`,
   tema satelit + koran) alih-alih menyematkan link foto stok pihak ketiga.
