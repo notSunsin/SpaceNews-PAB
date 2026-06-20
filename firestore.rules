@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // users/{uid} — profile data, only the owner can read/write their own doc.
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // favorites/{docId} — each document carries a userId field; a user
+    // may only create/read/update/delete favorites that belong to them.
+    match /favorites/{docId} {
+      allow read, delete: if request.auth != null
+                           && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null
+                    && request.resource.data.userId == request.auth.uid;
+    }
+  }
+}
